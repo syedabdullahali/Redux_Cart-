@@ -1,0 +1,53 @@
+.itemCart {
+    height: 10rem;
+    width: 35rem;
+
+    background: linear-gradient(35deg,
+            black 10%, rgb(9, 4, 101) 10%,
+            rgb(3, 3, 106) 20%, black 20%,
+            rgb(1, 1, 108) 30%, black 30%,
+            rgb(0, 0, 139) 40%, black 40%,
+            rgb(22, 22, 66)60%, black 60%);
+    color: white;
+
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+
+    box-shadow: inset 0px 10rem 0px rgba(43, 42, 65, 0.611);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width:500px) {
+    .itemCart {
+        width: 32rem;
+
+    }
+}
+
+.itemCart div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+}
+
+.itemCart div button {
+    background-color: transparent;
+    border: rgb(206, 206, 248) 2px solid;
+    color: white;
+
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.itemCart div button:hover {
+    background-color: rgba(255, 255, 255, 0.111);
+}

@@ -1,0 +1,74 @@
+.shoppingCart {
+    width: 24rem;
+    
+    background: linear-gradient(35deg,
+            black 10%, rgb(9, 4, 101) 10%,
+            rgb(3, 3, 106) 20%, black 20%,
+            rgb(1, 1, 108) 30%, black 30%,
+            rgb(0, 0, 139) 40%, black 40%,
+            rgb(22, 22, 66)60%, black 60%);
+
+    color: white;
+    border-radius: 8px;
+
+    padding: 0.75rem;
+    margin: 1.5rem auto;
+}
+
+.shoppingCart>.shoppingItem {
+    height: 8rem;
+    
+    background-color: white;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    margin: 0.35rem 0;
+    padding: 10px;
+}
+
+
+.productinfo {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding: 0 1rem;
+}
+
+.productinfo span {
+    font-size: 0.9rem;
+    margin-left: 0.2rem;
+}
+
+.counter {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 0 1rem;
+}
+
+.counter>div button {
+
+    font-size: 0.75rem;
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.5rem;
+
+    background: transparent;
+    border: 3px solid rgb(43, 42, 65);
+    
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.counter>div button:hover {
+    background: black;
+    color: white;
+}
