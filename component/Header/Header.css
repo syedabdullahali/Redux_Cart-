@@ -1,0 +1,47 @@
+.headerStyle {
+    height: 4rem;
+    width: 100vw;
+
+    background:
+        linear-gradient(45deg, white 30%, rgb(24, 43, 73) 30%,
+            rgb(22, 22, 66)35%, black 35%,
+            black 70%, black 70%,
+            rgb(22, 22, 66)90%, black 90%);
+
+    padding: 0 4%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:650px) {
+    .headerStyle {
+        background:
+            linear-gradient(45deg, white 45%, rgb(24, 43, 73) 45%,
+                rgb(22, 22, 66)55%, black 55%,
+                black 80%, black 80%,
+                rgb(22, 22, 66)100%, black 100%);
+    }
+}
+
+.headerStyle>button {
+    background-color: transparent;
+    border: rgb(206, 206, 248) 2px solid;
+
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+}
+
+.headerStyle>button:hover {
+    background-color: rgba(255, 255, 255, 0.111);
+
+}
